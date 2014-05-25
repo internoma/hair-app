@@ -28,6 +28,8 @@ body {
 	background: #ffffff;
 	color: #4C566C;
 	font:17px/22px Helvetica, Arial, Verdana, sans-serif;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 section {
