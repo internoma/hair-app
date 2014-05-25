@@ -542,9 +542,9 @@ $(function() {
 });
 
 
-document.addEventListener('touchmove', function(e) {
-    e.preventDefault();
-}, false);
+// document.addEventListener('touchmove', function(e) {
+//     e.preventDefault();
+// }, false);
 
 function listRefresh() {
     if (listScroll) {
