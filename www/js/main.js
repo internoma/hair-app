@@ -122,6 +122,7 @@ $(function() {
             this.appView.showView(settingsView);
             this.collection.fetch();
             settingsView.trigger('rendered');
+            listRefresh();
         },
 
         add: function(id) {
@@ -131,6 +132,7 @@ $(function() {
             this.appView.showView(listView);
             this.collection.fetch();
             $('#new-item-name').val(decodeURIComponent(id.replace(/\+/g, ' ')));
+            listRefresh();
         },
 
         edit: function(id) {
@@ -148,6 +150,7 @@ $(function() {
                     trigger: true
                 });
             }
+            listRefresh();
         },
 
         defaultRoute: function() {
