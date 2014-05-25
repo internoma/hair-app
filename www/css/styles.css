@@ -421,7 +421,9 @@ a:visited, a:hover, a:active, a:focus {
    Enable overflow: auto on elements with overthrow class when html element has overthrow class too */
 #app-view {
 	position: absolute;
-	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
 	width: 100%;
 	height: 100%;
 }

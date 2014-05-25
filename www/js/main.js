@@ -6,9 +6,9 @@
 
 /*global $, Backbone, _, Store, Tap, console */
 
+var listScroll;
 
 $(function() {
-
     var Item,
         ItemList,
         AppRouter,
@@ -156,7 +156,7 @@ $(function() {
             });
             this.appView.showView(listView);
             this.collection.fetch();
-            listRefresh();
+            //listRefresh();
         }
 
     });
@@ -541,14 +541,28 @@ $(function() {
     Backbone.history.start();
 });
 
-var listScroll;
 
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, false);
 
 function listRefresh() {
+    if (listScroll) {
+        setTimeout(function() {
+            listScroll.refresh();
+        }, 100);
+        window.console.log('refresh');
+    } else {
+        listInit();
+    }
+
+    window.console.dir(listScroll.options);
+}
+
+function listInit() {
     listScroll = new IScroll(document.getElementById('app-view'), {
         mouseWheel: false,
         scrollbars: false,
-        zoom: false
     });
-    window.console.log('refresh');
+    window.console.log('init');
 }
