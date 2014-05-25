@@ -26,10 +26,10 @@ html {
 
 body {
 	-webkit-user-select: none;
-	background: #ffffff;
+	background: #fff;
 	margin: 0;
 	padding: 0;
-	background-image: url(../img/background.png);
+	background-image: url(../img/background.png); 
 	color: #4C566C;
 	font:17px/22px Helvetica, Arial, Verdana, sans-serif;
 }
@@ -415,8 +415,9 @@ a:visited, a:hover, a:active, a:focus {
 
 }
 
+/* Overthrow CSS:
+   Enable overflow: auto on elements with overthrow class when html element has overthrow class too */
 #app-view {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }

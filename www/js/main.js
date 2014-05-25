@@ -6,6 +6,7 @@
 
 /*global $, Backbone, _, Store, Tap, console */
 
+
 $(function() {
 
     var Item,
@@ -155,6 +156,7 @@ $(function() {
             });
             this.appView.showView(listView);
             this.collection.fetch();
+            //listRefresh();
         }
 
     });
@@ -529,7 +531,6 @@ $(function() {
     /**
      * App config and init
      */
-
     items = new ItemList();
     appView = new ViewManager();
     router = new AppRouter({
@@ -538,12 +539,15 @@ $(function() {
     });
     tap = new Tap(document.getElementById('app-view'));
     Backbone.history.start();
+});
 
-    var nav_element = document.getElementById('app-view');
-    var navScroll = new IScroll(nav_element, {
+var listScroll;
+
+function listRefresh() {
+    listScroll = new IScroll(document.getElementById('app-view'), {
         mouseWheel: false,
         scrollbars: false,
         zoom: false
     });
-
-});
+    window.console.log('refresh');
+}
