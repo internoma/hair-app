@@ -156,7 +156,7 @@ $(function() {
             });
             this.appView.showView(listView);
             this.collection.fetch();
-            //listRefresh();
+            listRefresh();
         }
 
     });
@@ -542,6 +542,10 @@ $(function() {
 });
 
 var listScroll;
+
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, false);
 
 function listRefresh() {
     listScroll = new IScroll(document.getElementById('app-view'), {
