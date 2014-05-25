@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.phonegap.hair-app",
+            "version": "1.0.0",
+            "uri": "https://github.com/internoma/hair-app/archive/master.zip"
+        }
+    }
+}

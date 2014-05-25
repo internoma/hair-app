@@ -1,0 +1,19 @@
+{
+	"name": "Hair-App",
+	"description": "A mobile web app for creating quick to-do lists.",
+	"launch_path": "/hair-app/",
+	"icons": {
+		"30": "/hair-app/images/ffos-30.png",
+		"60": "/hair-app/images/ffos-60.png",
+		"128": "/hair-app/images/ff-128.png"
+	},
+	"developer": {
+		"name": "Alfredo González P.",
+		"url": "http://www.internoma.com"
+	},
+	"default_locale": "es-ES",
+	"appcache_path": "/hair-app/web.appcache",
+	"fullscreen": "true",
+	"type": "web",
+	"installs_allowed_from": ["*"]
+}

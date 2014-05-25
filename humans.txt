@@ -1,0 +1,15 @@
+/* MAIN */
+
+	Developed by: Alfredo Gonzalez Portero.
+	Site: www.internoma.com
+	Twitter: @internoma
+	GitHub: https://github.com/internoma/hair-app
+	Location: Madrid (Spain)
+		
+/* SITE */
+
+	Last update: 2014/05/25
+	Language: Spanish
+	Doctype: HTML5
+	Standards: HTML, CSS, JavaScript
+	Components: Backbone, Underscore, jQuery.
