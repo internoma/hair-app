@@ -31,7 +31,6 @@ body {
 	background-image: url(../img/background.png); 
 	color: #4C566C;
 	font:17px/22px Helvetica, Arial, Verdana, sans-serif;
-	overflow: hidden;
 }
 input[type="text"] {
     -webkit-user-select: text;
